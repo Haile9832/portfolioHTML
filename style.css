@@ -36,7 +36,7 @@ html {
 }
 
 .navbar .logo a {
-    color: #fff;
+    color: pink;
     font-size: 35px;
     font-weight: 60%;
 }
@@ -106,7 +106,8 @@ html {
 /*home section*/
 .home {
     display: flex;
-    background-color: black;
+    background-image: url(./img/1.jpg);
+    background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -117,16 +118,19 @@ html {
 }
 
 .home .home-content .text-1 {
+    color: black;
     font-size: 27px;
 }
 
 .home .home-content .text-2 {
+    color: black;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 .home .home-content .text-3 {
+    color: black;
     font-size: 40px;
     margin: 5px 0;
 }
@@ -324,13 +328,11 @@ section .title::after {
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.skills .skills-content .left .text,
+.skills .skills-content .right .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
 }
 .skills .skills-content .left a {
     display: inline-block;
@@ -348,34 +350,7 @@ section .title::after {
     color: crimson;
     background: none;
 }
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span {
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
+
 
 /* Contact section */
 .contact .title::before {
@@ -503,6 +478,9 @@ footer span a:hover {
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
+    }
+    .home {
+        background-size: 100% 100%;
     }
 }
 
